@@ -45,7 +45,9 @@ public class FracCalc {
    // Return the full line that the user typed in.
    public static String getInput() {
       // TODO: Implement this method
-       return "quit";
+       System.out.print("Enter: ");
+
+       return console.nextLine();
 
    }
    
@@ -82,7 +84,7 @@ public class FracCalc {
    public static String processExpression(String input) {
       // TODO: implement this method!
     
-        return "reduced result of expression";
+        return input;
 
    }
    
@@ -91,8 +93,10 @@ public class FracCalc {
    public static String provideHelp() {
       // TODO: Update this help text!
      
-      String help = "You must change this text.\n";
-      help += "Students, you need to provide actual helpful text here!";
+      String help = "[ Here is your help. Struggle. Try again..\n";
+      help += "If that doesn't work, remember grit: passion & perseverance.\n";
+      help += "If that doesn't work, read the spec.\n";
+      help += "Students, you need to provide actual helpful text here! ]";
       
       return help;
    }
